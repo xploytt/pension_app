@@ -1,0 +1,80 @@
+#invoice-modal{
+    background-color: #f1f1f1;
+    padding: 20px 0;
+}
+
+#schedule-table thead tr{
+    text-align: center;
+    background-color: #c8dcff;
+    font-weight: 600;
+}
+
+#table-wrapper ul{
+    font-weight: 600;
+}
+
+#modal-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fcfdff;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+@media (min-width:1140px) {
+    #modal-wrapper{
+        width: 900px;
+    }
+}
+
+@media (min-width:550px) {
+    #no-rsa{
+        min-width: 120px;
+    }
+}
+
+@media (min-width:380px) {
+    #schedule-table tr > *{
+        padding: .1rem .5rem;
+    }
+}
+
+#schedule-table tr > *{
+    border: 3px solid black;
+    font-weight: 500;
+}
+
+#schedule-table thead tr > *{
+    font-weight: 700;
+}
+
+#table-wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#schedule-table{
+    border: 2px solid #625656;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+#modal_btns button{
+    font-weight: 600;
+    margin: 0 10px 10px 0;
+    width: 150px;
+}
+
+#proceed_btn{
+    background-color: #2953bf;
+    color: white;
+}
+
+#decline_btn{
+    outline: 1px solid #cd0f0f;
+    color: #cd0f0f;
+}
+
+#modal_btns{
+    margin-top: 20px;
+}

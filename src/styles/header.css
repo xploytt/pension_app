@@ -1,0 +1,25 @@
+header > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0;
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+header > div > nav > ul{
+    display: inline-flex;
+    gap: 3rem;
+}
+
+header > div > div:last-child{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 1200px) {
+    header > div > nav > ul, header button{
+        font-size: 1.2rem;
+    }
+}

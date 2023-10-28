@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import Header from './components/Header';
 import './App.css';
+import MainPension from './Pages/MainPension';
+import { Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+import Schedule from './Pages/Schedule';
+import Invoice from './Pages/Invoice'
 
 function App() {
+  const [scheduleList, setScheduleList] = useState(null)
+  const [invoiceList, setInvoiceList] = useState(null)
+  const [pensionDetails, updatePensionDetails] = useState({
+    'employerCode': '',
+    'employerName': '',
+    'rsaSchedule': '',
+    'email': '',
+    'phoneDetails': '',
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <main>
+        <Routes>
+          <Route path='/' element={<MainPension pensionDetails={pensionDetails} updatePensionDetails={updatePensionDetails} setScheduleList={setScheduleList} />}></Route>
+          <Route path='/schedule' element={<Schedule scheduleList={scheduleList} pensionDetails={pensionDetails} setInvoiceList={setInvoiceList} />}></Route>
+          <Route path='/invoice' element={<Invoice invoiceList={invoiceList} />}></Route>
+        </Routes>
+      </main>
+    </>
   );
 }
 

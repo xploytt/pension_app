@@ -1,0 +1,120 @@
+#hero{
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+
+#form-div{
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+#form-div input{
+    background-color: hsl(0deg 0% 95.69%);
+    border: none;
+}
+
+#hero > div{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 40px;
+}
+
+#form-div label, #form-div input{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#hero h2{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+#form-div input{
+    font-weight: 500;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid #bebebe;
+    margin-top: 10px;
+    width: 370px;
+}
+
+/* @media (min-width: 1000px) {
+    #email-phone-div, #file-input-div{
+        display: flex;
+        gap: 2rem;
+    }
+} */
+
+@media (min-width:1140px) {
+    #hero > div{
+        width: 86%;
+    }
+
+    #form-div{
+        padding: 30px 4rem;
+    }
+
+    #email-phone-div, #file-input-div{
+        gap: 3rem;
+    }
+    #file-input-div{
+        gap: 2rem;
+    }
+}
+
+#form-div form > div:not(#form-div form > div:first-child){
+    margin-top: 20px;
+}
+
+#pfa-btn{
+    width: fit-content;
+    border-radius: 0;
+    margin-top: 10px;
+    color: #365ec3;
+    font-weight: 600;
+}
+
+#submit-btn{
+    width: 200px;
+}
+label{
+    display: block;
+}
+
+div.overlay-div{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(209, 219, 246, 0.6);
+}
+
+.small-overlay-widget{ 
+    height: 200px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(100%);
+}
+
+.overlay-div > div{
+    background-color: white;
+    margin: 0 auto;  
+}
+
+.spinner-div{
+    width: 100px;
+}
+
+.spinner-div img{
+    width: 100%;
+}
+

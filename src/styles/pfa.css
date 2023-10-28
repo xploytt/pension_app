@@ -1,0 +1,75 @@
+#pfa-wrapper{
+    width: fit-content;
+    height: fit-content;
+    transform: translateY(20%);
+    border-radius: 10px;
+}
+
+#pfa-wrapper > div:first-child{
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem 0;
+}
+
+button.times-default-btn{
+    margin-left: auto;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    background-color: #eaefff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg.times-svg{
+    color: #2953bf;
+}
+
+#pfa-wrapper >div:last-child{
+    width: 500px;
+    height: 500px;
+    overflow-y: scroll;
+    padding: .5rem 2rem;
+}
+
+table tr{
+    text-align: left;
+}
+
+#pfaTable th, #pfaTable td{
+    padding: 7px 0;
+    min-width: 80px;
+}
+
+
+
+
+/* scrollbar style  */
+#pfa-wrapper > div:last-child {
+    scrollbar-width: thin;
+    scrollbar-color: #2953bf #e0e0e0;
+  }
+  
+  #pfa-wrapper > div:last-child::-webkit-scrollbar {
+    width: 5px;
+    background-color: #e0e0e0;
+    color: #2953bf;
+    scrollbar-color: #2953bf
+  }
+  
+  #pfa-wrapper > div:last-child::-webkit-scrollbar-thumb {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+  }
+  
+  /* Firefox scrollbar */
+  #pfa-wrapper > div:last-child::-webkit-scrollbar-thumb {
+    background-color: #e0e0e0;
+  }
+  
+  #pfa-wrapper > div:last-child::-webkit-scrollbar-track {
+    background-color: #e3e3e3;
+  }
+  
+  
